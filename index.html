@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abstract</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">Abstract | Help Center</div>
+            <div class="actions">
+                <button class="submit-request">Submit a request</button>
+                <button class="signin">Sign in</button>
+                <button class="toggle-dark-mode">Dark Mode</button>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <h1>How can we help?</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button>&rarr;</button>
+        </div>
+
+        <div class="sections">
+            <div class="section">
+                <div class="icon">🔗</div>
+                <h2>Using Abstract</h2>
+                <p>Abstract lets you manage, version, and document your designs in one place.</p>
+                <a href="#">Learn More &rarr;</a>
+            </div>
+            <div class="section">
+                <div class="icon">👥</div>
+                <h2>Manage your account</h2>
+                <p>Configure your account settings, such as your email, profile details, and password.</p>
+                <a href="#">Learn More &rarr;</a>
+            </div>
+            <div class="section">
+                <div class="icon">🧩</div>
+                <h2>Manage organizations, teams, and projects</h2>
+                <p>Use Abstract organizations, teams, and projects to organize your people and your work.</p>
+                <a href="#">Learn More &rarr;</a>
+            </div>
+            <div class="section">
+                <div class="icon">💰</div>
+                <h2>Manage billing</h2>
+                <p>Change subscriptions and payment details.</p>
+                <a href="#">Learn More &rarr;</a>
+            </div>
+            <div class="section">
+                <div class="icon">🔑</div>
+                <h2>Authenticate to Abstract</h2>
+                <p>Set up and configure SSO, SCIM, and Just-in-Time provisioning.</p>
+                <a href="#">Learn More &rarr;</a>
+            </div>
+            <div class="section">
+                <div class="icon">💬</div>
+                <h2>Abstract support</h2>
+                <p>Get in touch with a human.</p>
+                <a href="#">Learn More &rarr;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <div class="column">
+                <h3>Abstract</h3>
+                <p>Start Trial<br>Pricing<br>Download</p>
+            </div>
+            <div class="column">
+                <h3>Resources</h3>
+                <p>Blog<br>Help Center<br>Release Notes<br>Status</p>
+            </div>
+            <div class="column">
+                <h3>Community</h3>
+                <p>Twitter<br>LinkedIn<br>Facebook<br>Dribbble<br>Podcast</p>
+            </div>
+            <div class="column">
+                <h3>Company</h3>
+                <p>About Us<br>Careers<br>Legal<br>Contact Us<br>info@abstract.com</p>
+            </div>
+        </div>
+        <p>&copy; Copyright 2024 Abstract Studio Design, Inc. All rights reserved</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const toggleButton = document.querySelector(".toggle-dark-mode");
+    
+            toggleButton.addEventListener("click", function() {
+                document.body.classList.toggle("dark-mode");
+                toggleButton.textContent = 
+                    document.body.classList.contains("dark-mode") ? "Light Mode" : "Dark Mode";
+            });
+        });
+    </script>    
+</body>
+</html>
